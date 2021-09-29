@@ -17,10 +17,10 @@ const modal =(props) =>{
                         <input placeholder="johndeo@gmail.com" required/>
                         <label>Password*</label>
                         <input placeholder="Password" required/>
-                        <button className={styles.button1}>Login</button>
+                        <button className={styles.button1}>SignIn</button>
                     </form>
                 </div>
-                <div className={styles.Text}>I'm already a member.<p style={{color:"#1C31EE"}} onClick={props.onClose}>SignIn</p></div>
+                <div className={styles.Text}>I'm already a member.<p style={{color:"#1C31EE"}} onClick={props.onClose}>Login In</p></div>
             </div>
         </div>
     )

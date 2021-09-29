@@ -1,0 +1,121 @@
+.Backdrop{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(230, 230, 230, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Modal{
+    width:35%;
+    padding:2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+}
+.Heading{
+    width:80%;
+    font-family: Viga;
+    font-size: 28px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.Form{
+    width:90%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+form{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;    
+}
+label{
+    font-family: Viga;
+    font-size: 14px;
+    line-height: 18px;
+}
+input{
+    width:70%;
+    height:7vh;
+    border: 2px solid #E5E3E3;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+    outline: none;
+}
+input:hover,input:focus{
+    border: 2px solid rgb(105, 105, 105);
+    cursor: pointer;
+}
+::placeholder{
+    text-align: center;
+}
+.button1{
+    width:70%;
+    height:7vh;
+    background: #1C31EE;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: Viga;
+    font-size: 14px;
+    line-height: 18px; 
+    border: none;
+    outline: none;
+}
+.button1:hover{
+    background: rgb(99, 114, 243);
+    cursor: pointer;
+}
+.Text{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Viga;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000000;
+}
+.Text:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px){
+.Modal{
+    width: 60%;
+}
+.Heading{
+    width:90%;
+
+}
+.Form{
+    width:90%;
+}
+input{
+    width:100%;
+}
+.button1{
+    width:100%;
+}
+.Text{
+    width:90%;
+    margin-top: 2rem;
+}
+
+}

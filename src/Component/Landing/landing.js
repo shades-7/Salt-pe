@@ -32,7 +32,7 @@ const Landing=() =>{
                     <button className={styles.button1}>Login</button>
                 </form>
             </div>
-            <div className={styles.Content}>Not registered yet? <p style={{color:"#1C31EE"}} onClick={()=>{setOpen(!open)}}>Create a new Account</p></div>
+            <div className={styles.Content}>Not registered yet? <p style={{color:"#1C31EE"}} onClick={()=>{setOpen(!open)}}> Create a new Account</p></div>
           </div>
           <div className={styles.Child2}>
             <div className={styles.Logo}> S A L T</div>

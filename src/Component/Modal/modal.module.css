@@ -58,6 +58,7 @@ input{
     border-radius: 50px;
     margin-bottom: 1rem;
     text-align: center;
+    margin-bottom: 2rem;
     outline: none;
 }
 input:hover,input:focus{

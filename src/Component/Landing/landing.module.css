@@ -40,7 +40,7 @@
 }
 .buttonG{
     width:63%;
-    height:45px;
+    padding:0.8rem;
     border-radius: 50px;
     border: 2px solid #E6E3E3;
     background-color: #ffffff;

@@ -26,9 +26,9 @@ const Landing=() =>{
             <div className={styles.Form}>
                 <form>
                     <label>Email*</label>
-                    <input placeholder="johndeo@gmail.com" required/>
+                    <input placeholder="johndeo@gmail.com" required type="email"/>
                     <label>Password*</label>
-                    <input placeholder="Password" required/>
+                    <input placeholder="Password" required type="password"/>
                     <button className={styles.button1}>Login</button>
                 </form>
             </div>

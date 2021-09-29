@@ -12,11 +12,11 @@ const modal =(props) =>{
                 <div className={styles.Form}>
                     <form>
                         <label>Name*</label>
-                        <input placeholder="John Deo" required/>
+                        <input placeholder="John Deo" required type="text"/>
                         <label>Email*</label>
-                        <input placeholder="johndeo@gmail.com" required/>
+                        <input placeholder="johndeo@gmail.com" required type="email"/>
                         <label>Password*</label>
-                        <input placeholder="Password" required/>
+                        <input placeholder="Password" required type="password"/>
                         <button className={styles.button1}>SignIn</button>
                     </form>
                 </div>

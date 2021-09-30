@@ -67,11 +67,11 @@ const Landing=() =>{
 
             <button className={styles.buttonG}> 
                 <img src={Google} alt={"google icon"} style={{width:"18px",marginRight:"10px"}}/>
-                SignIn with google
+                Sign In with Google
             </button>
 
             <div className={styles.Seperator}>
-                <div>or SignIn with Email</div>
+                <div>or Sign In with Email</div>
             </div>
 
             {error && <div className={styles.Error}>{error}</div>}
@@ -86,7 +86,7 @@ const Landing=() =>{
                 </form>
             </div>
 
-            <div className={styles.Content}>Not registered yet? <p style={{color:"#1C31EE"}} onClick={()=>{setOpen(!open)}}> Create a new Account</p></div>
+            <div className={styles.Content}>Not registered yet? &nbsp;<p style={{color:"#1C31EE"}} onClick={()=>{setOpen(!open)}}> Create a new Account</p></div>
           
           </div>
 

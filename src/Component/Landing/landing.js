@@ -16,7 +16,7 @@ const Landing=() =>{
     let [open, setOpen] = useState(false)
     let [data, setData] = useState({email: "", password:""})
     let [error,setError] = useState()
-    //let [info,setInfo] = useState()
+    
     
 
     //clear form

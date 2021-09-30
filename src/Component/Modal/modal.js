@@ -25,7 +25,7 @@ const Modal =(props) =>{
             setTimeout(()=>{
                 setValue(null)
             },3000)
-            
+            clear();
         })
         .catch((res)=>{
             console.log(res.response.data)
@@ -35,7 +35,7 @@ const Modal =(props) =>{
             },3000)
         })
 
-        clear();
+        
     }
 
     if(!props.show){

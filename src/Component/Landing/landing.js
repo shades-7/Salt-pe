@@ -16,6 +16,7 @@ const Landing=() =>{
     let [open, setOpen] = useState(false)
     let [data, setData] = useState({email: "", password:""})
     let [error,setError] = useState()
+    //let [info,setInfo] = useState()
     
 
     //clear form
@@ -23,11 +24,12 @@ const Landing=() =>{
         setData({ email:"", password:""});
     }
 
+    let info = localStorage.getItem("userInfo")
      useEffect(()=>{
-        if(localStorage.getItem("userInfo")){
+        if(info){
             history.push('/welcome')
         }
-    },[history,localStorage.getItem("userInfo")])
+    },[history,info])
 
     async function handleSubmit(e){
        e.preventDefault();

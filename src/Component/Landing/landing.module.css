@@ -35,7 +35,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #7D7C7C;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .buttonG{
@@ -59,12 +59,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-family: Viga;
     font-size: 14px;
     line-height: 18px;
     color: #CCCCCC;
 
+}
+.Error{
+    width:60%;
+    border: 2px solid red;
+    background-color: rgba(245, 182, 182, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    color:red;
+    text-align: center;
 }
 .Form{
     width:90%;
@@ -208,6 +221,9 @@ input:hover,input:focus{
         width:80%;
     }
     input{
+        width:80%;
+    }
+    .Error{
         width:80%;
     }
     .button1{

@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import styles from './landing.module.css'
 import axios from 'axios'
-import { useHistory } from "react-router-dom";
+import { useHistory} from "react-router-dom"
 
 
 import Google from '../../asset/google.png'
@@ -9,14 +9,13 @@ import Pic from '../../asset/pic.png'
 
 import Modal from '../Modal/modal'
 
-const Landing=() =>{
+const Landing=(props) =>{
    
     let history = useHistory();
 
     let [open, setOpen] = useState(false)
     let [data, setData] = useState({email: "", password:""})
     let [error,setError] = useState()
-    
     
 
     //clear form
@@ -27,7 +26,7 @@ const Landing=() =>{
     let info = localStorage.getItem("userInfo")
      useEffect(()=>{
         if(info){
-            history.push('/welcome')
+             history.push('/welcome')
         }
     },[history,info])
 
@@ -42,6 +41,7 @@ const Landing=() =>{
         .then((res)=>{
             console.log(res)
             localStorage.setItem('userInfo',JSON.stringify(res.data))
+            props.data();
             
         }).catch((message)=>{
             setError(message.response.data)

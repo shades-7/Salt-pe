@@ -1,8 +1,9 @@
 import React from 'react'
+import {withRouter} from 'react-router-dom'
 import styles from './welcome.module.css'
 import { useHistory } from "react-router-dom";
 
-const Welcome =() =>{
+const Welcome =(props) =>{
     const history = useHistory();
     return(
         <div className={styles.Conatiner}>
@@ -11,9 +12,10 @@ const Welcome =() =>{
             onClick={()=>{
                 localStorage.removeItem("userInfo")
                 history.push('/')
+                props.data()
                 }}>Logout</button>
         </div>
     )
 }
 
-export default Welcome;
+export default withRouter(Welcome);

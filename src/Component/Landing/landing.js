@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import styles from './landing.module.css'
 import axios from 'axios'
 import { useHistory } from "react-router-dom"
@@ -23,12 +23,13 @@ const Landing=(props) =>{
         setData({ email:"", password:""});
     }
 
-    let info = localStorage.getItem("userInfo")
-     useEffect(()=>{
-        if(info){
-             history.push('/welcome')
-        }
-    },[history,info])
+    //let info = localStorage.getItem("userInfo")
+    //  useEffect(()=>{
+    //     if(info){
+    //           history.push('/welcome')
+    //         // <Redirect push to="/welcome"/>
+    //     }
+    // },[history,info])
 
     async function handleSubmit(e){
        e.preventDefault();
@@ -40,18 +41,18 @@ const Landing=(props) =>{
          await axios.post('https://backendsalt.herokuapp.com/user/login',data,config)
         .then((res)=>{
             console.log(res)
-            localStorage.setItem('userInfo',JSON.stringify(res.data))
-            props.data();
-            
+             localStorage.setItem('userInfo',JSON.stringify(res.data))
+             history.push('/welcome');
         }).catch((message)=>{
             setError(message.response.data)
             setTimeout(()=>{
                 setError(null)
             },3000)
             console.log(message.response.data)
+            clear();
         })
 
-        clear();
+       
     }
 
     return(

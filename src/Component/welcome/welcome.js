@@ -12,7 +12,7 @@ const Welcome =(props) =>{
             onClick={()=>{
                 localStorage.removeItem("userInfo")
                 history.push('/')
-                props.data()
+                // props.data()
                 }}>Logout</button>
         </div>
     )

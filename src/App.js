@@ -6,6 +6,7 @@ import {Route} from 'react-router-dom'
 
 function App() {
 let[Auth,setAuth] = useState(false)
+console.log(Auth)
 
   return (
     <div className="App">
